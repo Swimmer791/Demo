@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1">
+		<title>Address — Demo</title>
+		<meta name="description" content="Address and location page">
+		<script src="https://cdn.tailwindcss.com"></script>
+	</head>
+	<body class="bg-gray-50 text-gray-800 antialiased">
+		<header class="bg-white shadow-sm">
+			<div class="max-w-4xl mx-auto px-6 py-4 flex items-center justify-between">
+				<a href="index.html" class="text-xl font-semibold text-sky-600">Demo Site</a>
+				<nav class="space-x-4 text-sm">
+					<a href="index.html" class="text-gray-600 hover:text-sky-600">Home</a>
+					<a href="contact.html" class="text-gray-600 hover:text-sky-600">Contact</a>
+					<a href="info.html" class="text-gray-600 hover:text-sky-600">Info</a>
+				</nav>
+			</div>
+		</header>
+
+		<main class="max-w-4xl mx-auto px-6 py-10">
+			<section class="mb-8">
+				<h1 class="text-3xl font-extrabold text-gray-900">Our Address</h1>
+				<p class="mt-2 text-gray-600">Find us at the location below. You'll also find opening hours and contact methods.</p>
+			</section>
+
+			<section class="grid grid-cols-1 md:grid-cols-2 gap-6">
+				<div class="bg-white rounded-lg shadow p-6">
+					<h2 class="text-xl font-semibold text-gray-800">Main Office</h2>
+					<address class="not-italic mt-4 text-gray-700 space-y-2">
+						<div>Demo Company</div>
+						<div>1600 Amphitheatre Parkway</div>
+						<div>Mountain View, CA 94043</div>
+						<div>United States</div>
+					</address>
+
+					<dl class="mt-4 grid grid-cols-1 gap-2 text-sm text-gray-600">
+						<div class="flex items-center justify-between">
+							<dt class="font-medium">Phone</dt>
+							<dd><a href="tel:+16502530000" class="text-sky-600 hover:underline">+1 (650) 253-0000</a></dd>
+						</div>
+						<div class="flex items-center justify-between">
+							<dt class="font-medium">Email</dt>
+							<dd><a href="mailto:info@example.com" class="text-sky-600 hover:underline">info@example.com</a></dd>
+						</div>
+						<div class="flex items-center justify-between">
+							<dt class="font-medium">Hours</dt>
+							<dd>Mon–Fri 9:00–17:00</dd>
+						</div>
+					</dl>
+
+					<div class="mt-6 flex gap-3">
+						<a class="inline-flex items-center gap-2 px-4 py-2 bg-sky-600 text-white rounded hover:bg-sky-700" href="https://www.google.com/maps/dir/?api=1&destination=1600+Amphitheatre+Parkway+Mountain+View+CA" target="_blank" rel="noopener">Get directions</a>
+						<a class="inline-flex items-center gap-2 px-4 py-2 border border-gray-200 rounded hover:bg-gray-50" href="contact.html">Contact page</a>
+					</div>
+				</div>
+
+				<div class="bg-white rounded-lg shadow overflow-hidden">
+					<div class="h-64 md:h-full">
+						<iframe class="w-full h-full border-0" loading="lazy" allowfullscreen
+							src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3168.719934037384!2d-122.0856082846925!3d37.42302197982547!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808fb0b2b6b1c8b7%3A0x4d5b3c1014c3cf0a!2s1600%20Amphitheatre%20Pkwy%2C%20Mountain%20View%2C%20CA%2094043%2C%20USA!5e0!3m2!1sen!2s!4v1600000000000!5m2!1sen!2s">
+						</iframe>
+					</div>
+				</div>
+			</section>
+
+			<section class="mt-8 bg-white rounded-lg shadow p-6">
+				<h3 class="text-lg font-semibold">Quick contact</h3>
+				<form class="mt-4 grid grid-cols-1 sm:grid-cols-2 gap-4" action="contact.html" method="get">
+					<label class="flex flex-col">
+						<span class="text-sm text-gray-700">Name</span>
+						<input name="name" required class="mt-1 px-3 py-2 border rounded focus:outline-none focus:ring focus:ring-sky-200" />
+					</label>
+					<label class="flex flex-col">
+						<span class="text-sm text-gray-700">Email</span>
+						<input name="email" type="email" required class="mt-1 px-3 py-2 border rounded focus:outline-none focus:ring focus:ring-sky-200" />
+					</label>
+					<label class="sm:col-span-2 flex flex-col">
+						<span class="text-sm text-gray-700">Message</span>
+						<textarea name="message" rows="4" class="mt-1 px-3 py-2 border rounded focus:outline-none focus:ring focus:ring-sky-200"></textarea>
+					</label>
+					<div class="sm:col-span-2">
+						<button type="submit" class="px-4 py-2 bg-sky-600 text-white rounded hover:bg-sky-700">Send message</button>
+					</div>
+				</form>
+			</section>
+		</main>
+
+		<footer class="mt-12 py-6 border-t bg-white">
+			<div class="max-w-4xl mx-auto px-6 text-sm text-gray-600">© Demo Company — <a href="contact.html" class="text-sky-600 hover:underline">Contact</a></div>
+		</footer>
+	</body>
+</html>
