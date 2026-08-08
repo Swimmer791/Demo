@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My First JavaScript</title>
+</head>
+<body>
+
+<h1 id="supermarket">Tesco</h1>
+
+<button onclick="sayHello()">Click Me</button>
+
+<h1 id="title">Hello</h1>
+
+<button onclick="changeText()">
+    Change Text
+</button>
+
+<script>
+
+function sayHello() {
+    //alert("Hello World!");
+    var name = "bob"
+    var age = 80
+    var supermarket = document.getElementById("supermarket").innerHTML;
+    document.getElementById("title").innerHTML = "Hello " + name + ", you are " + age + " years old and you are shopping at " + supermarket;
+
+var minimumAge = 18;
+var paulAge = 19;
+paulAge = "nineteen"
+if (paulAge < minimumAge) {
+    document.getElementById("title").innerHTML = "Sorry, you are too young to enter this site.";
+} else {
+    document.getElementById("title").innerHTML = "Welcome to the site!";
+
+
+    //document.getElementById("title").innerHTML = "name: " + name + ", age: " + age;
+}
+}
+</script>
+
+</body>
+</html>
